@@ -9,8 +9,8 @@ class GameRealm: Object {
     @objc dynamic var name = ""
 }
 
-class RealmService {
-    static let shared = RealmService()
+class RealmManager {
+    static let shared = RealmManager()
     private let realm = try! Realm()
     
     func getAllTask() -> Results<GameRealm> {
